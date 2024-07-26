@@ -1,0 +1,26 @@
+.bg-color{
+    background-color: rgb(61, 61, 61);
+}
+.theme-btn{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 1;
+    border: 0;
+    background-color: rgb(255 255 255 / 0%);
+}
+
+.theme-btn i{
+    font-size: 30px;
+}
+
+#light-btn i{
+    color: white;
+}
+
+.active{
+    display: block;
+}
+
