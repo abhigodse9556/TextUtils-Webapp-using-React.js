@@ -1,6 +1,4 @@
-import React from 'react'
 
-export default function main() {
     const handleLightTheme = () => {
         document.querySelector('body').style.backgroundColor = "white"
         document.querySelector('body').style.color = "black"
@@ -22,10 +20,39 @@ export default function main() {
         let lightbtn = document.querySelector('#light-btn')
         lightbtn.classList.add('active')
     }
-    return (
-        <>
+    
             <button id='dark-btn' className='theme-btn active' onClick={handleDarkTheme}><i class="bi bi-moon-fill"></i></button>
             <button id='light-btn' className='theme-btn' onClick={handleLightTheme}><i class="bi bi-moon-fill"></i></button>
-        </>
-    )
+
+.bg-color{
+    background-color: rgb(61, 61, 61);
 }
+.theme-btn{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 1;
+    border: 0;
+    background-color: rgb(255 255 255 / 0%);
+}
+
+.theme-btn i{
+    font-size: 30px;
+}
+
+#light-btn i{
+    color: white;
+}
+
+.active{
+    display: block;
+}
+
+
+
+<form className="d-flex" role="search">
+                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button className="btn btn-outline-success" type="submit">Search</button>
+                        </form>
