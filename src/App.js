@@ -1,6 +1,7 @@
 import './App.css';
 import About from './components/About';
 import Alert from './components/Alert';
+import Footer from './components/Footer';
 import './components/Main.css';
 import Navbar from './components/Navbar';
 import TextArea from './components/TextArea';
@@ -22,7 +23,7 @@ function App() {
     });
     setTimeout(() => {
       setAlert(null);
-    }, 1500);
+    }, 3500);
   };
 
   // Load mode from localStorage or set default to 'light'
@@ -87,14 +88,15 @@ useEffect(() => {
   return (
     <>
       <Router>
-        <Navbar title='TextUtils' mode={mode} toggleMode={toggleMode} modeTxt={modeTxt} toggleActive={toggleActive} />
+        <Navbar title='Textify' mode={mode} toggleMode={toggleMode} modeTxt={modeTxt} toggleActive={toggleActive} />
         <Alert alert={alert} />
         <div className="container">
           <Routes>
             <Route path="/about" element={<About mode={mode} />} />
-            <Route path="/" element={<TextArea heading="Enter the Text to Analyze Below" mode={mode} showAlert={showAlert} />} />
+            <Route path="/" element={<TextArea heading="Elevate Your Text in Just One Click" mode={mode} showAlert={showAlert} />} />
           </Routes>
         </div>
+        <Footer/>
       </Router>
     </>
   );
