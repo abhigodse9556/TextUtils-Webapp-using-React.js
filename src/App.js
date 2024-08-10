@@ -88,7 +88,7 @@ useEffect(() => {
   return (
     <>
       <Router>
-        <Navbar title='Textify' mode={mode} toggleMode={toggleMode} modeTxt={modeTxt} toggleActive={toggleActive} />
+        <Navbar title='TextUtilify' mode={mode} toggleMode={toggleMode} modeTxt={modeTxt} toggleActive={toggleActive} />
         <Alert alert={alert} />
         <div className="container">
           <Routes>
